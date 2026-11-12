@@ -1,0 +1,18 @@
+{
+  "name": "bit-placement-crawler",
+  "version": "1.0.0",
+  "description": "Zero-DB real-time placement crawler for BIT Mesra with instant ntfy phone alerts",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "check-now": "node crawler.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "axios-cookiejar-support": "^5.0.5",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "tough-cookie": "^5.1.2"
+  }
+}

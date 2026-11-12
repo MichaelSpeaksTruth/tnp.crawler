@@ -1,0 +1,47 @@
+name: BIT Mesra Placement Monitor
+
+on:
+  schedule:
+    # Runs every 3 hours during active hours (6:00 AM to 12:00 Midnight IST)
+    # Off hours (12:00 AM to 6:00 AM IST) are skipped completely (0 minutes consumed)
+    # UTC equivalent: 00:30, 03:30, 06:30, 09:30, 12:30, 15:30, 18:30 UTC
+    - cron: '30 0,3,6,9,12,15,18 * * *'
+  
+  # Allows triggering manually anytime from the GitHub website
+  workflow_dispatch:
+
+jobs:
+  check-openings:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Needed to commit updated seen_jobs.json
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Placement Scraper
+        env:
+          PORTAL_URL: ${{ secrets.PORTAL_URL || 'https://tp.bitmesra.co.in' }}
+          LOGIN_ID: ${{ secrets.LOGIN_ID }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          GRADUATION_YEAR: ${{ secrets.GRADUATION_YEAR || '2028' }}
+          WATCH_ROLES: ${{ secrets.WATCH_ROLES || '2M,3M,6M,FTE' }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: node crawler.js
+
+      - name: Persist Seen Jobs State
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add seen_jobs.json || true
+          git diff --staged --quiet || (git commit -m "chore: record evaluated openings [skip ci]" && git push)
