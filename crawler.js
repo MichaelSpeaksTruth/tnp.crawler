@@ -51,13 +51,13 @@ function saveSeenNotice(noticeId, noticeData) {
   fs.writeFileSync(SEEN_FILE, JSON.stringify(store, null, 2), 'utf-8');
 }
 
-async function sendNtfyAlert({ title, message, url, priority = 'high' }) {
+async function sendNtfyAlert({ title, message, url, priority = '5' }) {
   const ntfyUrl = `https://ntfy.sh/${NTFY_TOPIC}`;
   try {
     await axios.post(ntfyUrl, message, {
       headers: {
         'Title': title,
-        'Priority': priority,
+        'Priority': '5',
         'Click': url || PORTAL_URL,
         'Actions': `view, Open Portal, ${url || PORTAL_URL}`,
       },
@@ -204,7 +204,7 @@ export async function runScraper() {
             title: 'BIT Placement Notice / Shortlist',
             message: notice.text,
             url: `${PORTAL_URL}/index.html`,
-            priority: 'default',
+            priority: '5',
           });
         }
       }
@@ -302,7 +302,7 @@ export async function runScraper() {
             `Eligible Batch: ${GRADUATION_YEAR}`,
           ].filter(Boolean).join('\n'),
           url: fullInfoUrl,
-          priority: 'urgent',
+          priority: '5',
         });
       } else {
         saveSeenJob(jobId, { company, roleType, isBatchEligible, skipped: true });
