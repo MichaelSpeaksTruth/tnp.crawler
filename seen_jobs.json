@@ -1119,6 +1119,144 @@
       "roleType": "2M",
       "isBatchEligible": false,
       "skipped": true
+    },
+    "dd15ab3bf59e09a876ee8f6f23d032fe": {
+      "recordedAt": "2026-11-19T17:38:47.625Z",
+      "company": "Square Yards",
+      "roleType": "6M",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "ecb1b672b15b312ccd43e57cad8a522d": {
+      "recordedAt": "2026-11-19T17:38:48.116Z",
+      "company": "Pranav Techone Pvt Ltd",
+      "roleType": "6M",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "832c2f072d9d53c2f0dc6afbc4e25e9e": {
+      "recordedAt": "2026-11-19T17:38:48.678Z",
+      "company": "Elip AI",
+      "roleType": "2M",
+      "designation": "Software Engineer Intern Job DescriptionBuild AI a",
+      "deadline": "20/11/2026",
+      "postedOn": "18/11/2026",
+      "ctc": "",
+      "link": "https://tp.bitmesra.co.in/job/info/832c2f072d9d53c2f0dc6afbc4e25e9e",
+      "graduationYear": 2028
+    },
+    "5452981d1face71734ff97e2175b8914": {
+      "recordedAt": "2026-11-19T17:38:50.218Z",
+      "company": "Texas Instruments",
+      "roleType": "2M",
+      "designation": "Intern Job DescriptionJD Analog: Link Place of Pos",
+      "deadline": "20/11/2026",
+      "postedOn": "18/11/2026",
+      "ctc": "",
+      "link": "https://tp.bitmesra.co.in/job/info/5452981d1face71734ff97e2175b8914",
+      "graduationYear": 2028
+    },
+    "f77af2f447671afd566f570f2546fa12": {
+      "recordedAt": "2026-11-19T17:38:50.913Z",
+      "company": "NxtWave",
+      "roleType": "6M",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "5a9d0c85187f57c2891f1e4e72546c85": {
+      "recordedAt": "2026-11-19T17:38:51.404Z",
+      "company": "Virasa Organic",
+      "roleType": "FTE",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "558d05677380eb09e5f0e71a5a936d7c": {
+      "recordedAt": "2026-11-19T17:38:51.911Z",
+      "company": "Maventic Innovative Solutions Pvt Ltd",
+      "roleType": "6M",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "f5d346854a785a57f1a7acc7fbad5840": {
+      "recordedAt": "2026-11-19T17:38:52.401Z",
+      "company": "Bajaj Finance Limited",
+      "roleType": "FTE",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "1f38710510b33192401abac555ee69d8": {
+      "recordedAt": "2026-11-19T17:38:52.403Z",
+      "company": "Aditya Birla Chemicals(Grasim Industries Chemical Division)",
+      "deadline": "18/11/2026",
+      "expired": true
+    },
+    "f81ef33a32e45e11badb54c480f627ff": {
+      "recordedAt": "2026-11-19T17:38:52.404Z",
+      "company": "Schneider Electric",
+      "deadline": "15/11/2026",
+      "expired": true
+    },
+    "f9df2b1a693636ea835c8a0827ce34d0": {
+      "recordedAt": "2026-11-19T17:38:52.406Z",
+      "company": "SS Rail Tech",
+      "deadline": "18/11/2026",
+      "expired": true
+    },
+    "a8af3bf8095f5f4d7c07b076310a1d75": {
+      "recordedAt": "2026-11-19T17:38:52.407Z",
+      "company": "Lindstrom India Services Pvt Ltd",
+      "deadline": "18/11/2026",
+      "expired": true
+    },
+    "cdbd0498a22ee02286f31e9300c8a499": {
+      "recordedAt": "2026-11-19T17:38:52.409Z",
+      "company": "Microland Limited",
+      "deadline": "17/11/2026",
+      "expired": true
+    },
+    "4a805ccbf640121d2106db859876d788": {
+      "recordedAt": "2026-11-19T17:38:52.411Z",
+      "company": "Pin Click",
+      "deadline": "18/11/2026",
+      "expired": true
+    },
+    "da5d168c444cb6863a301828f923cbd4": {
+      "recordedAt": "2026-11-19T17:38:52.413Z",
+      "company": "Vetty",
+      "deadline": "16/11/2026",
+      "expired": true
+    },
+    "874c625900e53b70da72a0f6d826ebcc": {
+      "recordedAt": "2026-11-19T17:38:52.415Z",
+      "company": "Infosys",
+      "deadline": "08/07/2026",
+      "expired": true
+    },
+    "2a5bfc4fc09235379fb5d8a897b8a70c": {
+      "recordedAt": "2026-11-19T17:38:52.417Z",
+      "company": "Dalmia Cement (Bharat) Limited",
+      "deadline": "16/11/2026",
+      "expired": true
+    },
+    "144b549124502e28347e2bfc392872aa": {
+      "recordedAt": "2026-11-19T17:38:52.884Z",
+      "company": "Envision Energy",
+      "roleType": "FTE",
+      "isBatchEligible": false,
+      "skipped": true
+    },
+    "b6f12424624947025ae97ea73c1eadab": {
+      "recordedAt": "2026-11-19T17:38:52.886Z",
+      "company": "Unlox Academy",
+      "deadline": "16/11/2026",
+      "expired": true
+    },
+    "6219bfb33000b0d84255990190ffe226": {
+      "recordedAt": "2026-11-19T17:38:53.429Z",
+      "company": "ATLBattery Technology (India) Private Limited",
+      "roleType": "6M",
+      "isBatchEligible": false,
+      "skipped": true
     }
   },
   "notices": {}

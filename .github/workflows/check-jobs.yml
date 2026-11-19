@@ -2,19 +2,24 @@ name: BIT Mesra Placement Monitor
 
 on:
   schedule:
-    # Runs every 3 hours during active hours (6:00 AM to 12:00 Midnight IST)
-    # Off hours (12:00 AM to 6:00 AM IST) are skipped completely (0 minutes consumed)
-    # UTC equivalent: 00:30, 03:30, 06:30, 09:30, 12:30, 15:30, 18:30 UTC
-    - cron: '30 0,3,6,9,12,15,18 * * *'
-  
-  # Allows triggering manually anytime from the GitHub website
+    # Runs every 30 minutes during active campus hours (06:00 AM to 12:00 Midnight IST)
+    # Off-hours (12:00 Midnight to 06:00 AM IST) are skipped to preserve runner minutes
+    # Active UTC hours: 00:30 to 18:30 UTC
+    - cron: '*/30 0-18 * * *'
+
+  # Trigger on code push to main to verify pipeline health
+  push:
+    branches:
+      - main
+
+  # Allows manual triggering anytime from the GitHub web interface
   workflow_dispatch:
 
 jobs:
   check-openings:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # Needed to commit updated seen_jobs.json
+      contents: write
 
     steps:
       - name: Checkout Code
