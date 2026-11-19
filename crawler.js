@@ -236,7 +236,19 @@ export async function runScraper() {
         continue;
       }
 
-      // 1. DEADLINE FILTER: Skip if deadline has already passed
+      // 1. STRICT PORTAL ELIGIBILITY GATE:
+      // The company MUST be present in the portal's verified #eligibleModal list.
+      // If the placement cell did not mark you eligible for this company, skip immediately.
+      const isOfficiallyEligible = officiallyEligibleCompanies.some(e =>
+        company.toLowerCase().includes(e) || e.includes(company.toLowerCase())
+      );
+
+      if (!isOfficiallyEligible) {
+        saveSeenJob(jobId, { company, isOfficiallyEligible: false, skipped: true });
+        continue;
+      }
+
+      // 2. DEADLINE FILTER: Skip if deadline has already passed
       const deadlineDate = parsePortalDate(deadlineStr);
       if (deadlineDate && deadlineDate < now) {
         // Record as seen expired job so we never re-evaluate it

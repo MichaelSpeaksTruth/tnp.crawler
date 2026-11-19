@@ -1145,17 +1145,6 @@
       "link": "https://tp.bitmesra.co.in/job/info/832c2f072d9d53c2f0dc6afbc4e25e9e",
       "graduationYear": 2028
     },
-    "5452981d1face71734ff97e2175b8914": {
-      "recordedAt": "2026-11-19T17:38:50.218Z",
-      "company": "Texas Instruments",
-      "roleType": "2M",
-      "designation": "Intern Job DescriptionJD Analog: Link Place of Pos",
-      "deadline": "20/11/2026",
-      "postedOn": "18/11/2026",
-      "ctc": "",
-      "link": "https://tp.bitmesra.co.in/job/info/5452981d1face71734ff97e2175b8914",
-      "graduationYear": 2028
-    },
     "f77af2f447671afd566f570f2546fa12": {
       "recordedAt": "2026-11-19T17:38:50.913Z",
       "company": "NxtWave",
@@ -1256,6 +1245,12 @@
       "company": "ATLBattery Technology (India) Private Limited",
       "roleType": "6M",
       "isBatchEligible": false,
+      "skipped": true
+    },
+    "5452981d1face71734ff97e2175b8914": {
+      "recordedAt": "2026-11-19T17:44:23.637Z",
+      "company": "Texas Instruments",
+      "isOfficiallyEligible": false,
       "skipped": true
     }
   },
